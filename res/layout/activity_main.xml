@@ -1,15 +1,12 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
 
-    <TextView
+        <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="28dp"
         android:text="@string/search_text" />
 
@@ -17,8 +14,6 @@
         android:id="@+id/autocomplete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
         android:hint="@string/autocomplet_box"
         android:completionThreshold="4" >
 
@@ -31,8 +26,6 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/autocomplete"
         android:layout_marginTop="14dp"
         android:text="@string/search_text2" />
 
@@ -40,20 +33,21 @@
         android:id="@+id/autocomplete2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView2"
         android:hint="@string/autocomplet_box2"
          android:completionThreshold="4" />
 
-    <RadioGroup
-        android:id="@+id/groupvalue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:orientation="horizontal" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
-        <RadioButton
+        <RadioGroup
+            android:id="@+id/groupvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+           <RadioButton
             android:id="@+id/travel_mode_car"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,15 +65,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Walk" />
-    </RadioGroup>
+        </RadioGroup>
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/groupvalue"
-        android:layout_toRightOf="@+id/groupvalue"
-        android:text="@string/submit" />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/submit" />
 
-</RelativeLayout>
+    </RelativeLayout>
+
+    </LinearLayout>

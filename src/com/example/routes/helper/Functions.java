@@ -172,7 +172,9 @@ public class Functions {
 									trans.num_stops = transit.getInt("num_stops");
 									//System.out.println(stepjs.getString("travel_mode")+" "+transit.getJSONObject("line").getString("short_name") );
 									LinesObject lines = new LinesObject(transit.getJSONObject("line").getJSONArray("agencies").getJSONObject(0).getString("name"), 
-											transit.getJSONObject("line").getString("name"), transit.getJSONObject("line").getJSONObject("vehicle").getString("name"));
+											 transit.getJSONObject("line").getJSONObject("vehicle").getString("name"));
+									if(transit.getJSONObject("line").has("name"))
+										lines.name = transit.getJSONObject("line").getString("name");
 									if(transit.getJSONObject("line").has("short_name"))
 										lines.short_name = transit.getJSONObject("line").getString("short_name");
 									trans.line =lines;

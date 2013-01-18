@@ -51,8 +51,8 @@ public class DirectionActivity extends Activity implements OnClickListener{
 		origin = getIntent().getStringExtra("origin");
 		destination = getIntent().getStringExtra("destination");
 		
-		/*origin = "espire";
-		destination = "hauz khas metro";
+		/*origin = "1.357371,103.988836";
+		destination = "1.3100334,103.8651056";
 		mode =  "transit";*/
 		
 		routelayout = (LinearLayout) findViewById(R.id.routes);

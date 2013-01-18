@@ -13,10 +13,9 @@ public class LinesObject {
 	
 	
 	
-	public LinesObject(String agencies, String name,String vehicle) {
+	public LinesObject(String agencies, String vehicle) {
 		super();
 		this.agencies = agencies;
-		this.name = name;
 		this.vehicle = vehicle;
 	}
 
