@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Routes</string>
+    <string name="place_api">AIzaSyA8PNzwwVLoYqs8J6pk6KbBp0ChbDnZRwo</string>
+    <string name="place_base_url">https://maps.googleapis.com/maps/api/place</string>
+    <string name="search_text">Please Enter start place name</string>
+    <string name="autocomplet_box">--First Place name--</string>
+    <string name="search_text2">Please Enter End place name</string>
+    <string name="autocomplet_box2">--End Place name--</string>
+    <string name="submit">Submit</string>
+</resources>
